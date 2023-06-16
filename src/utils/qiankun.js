@@ -1,15 +1,21 @@
 import { registerMicroApps } from "qiankun";
 
 export function registerApps() {
-  console.log('注册微应用')
+  console.log("注册微应用");
   try {
     registerMicroApps(
       [
         {
           name: "app-vue3",
-          entry: "//localhost:8083",
+          entry:
+            process.env.NODE_ENV === "development"
+              ? "//localhost:8083"
+              : "/app-vue3/index.html",
           container: "#sub-container",
-          activeRule: "/app/app-vue3",
+          activeRule:
+            process.env.NODE_ENV === "development"
+              ? "/app-vue3"
+              : "/app-vue3", 
         },
         {
           name: "ReactApp",

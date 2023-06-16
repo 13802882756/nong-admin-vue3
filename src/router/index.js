@@ -24,7 +24,7 @@ const routes = [
       },
       {
         // history模式需要通配所有路由，详见vue-router文档
-        path: "/app/app-vue3/:pathMatch(.*)*",
+        path: "/app-vue3/:pathMatch(.*)*",
         name: "app-vue3",
         meta: {},
         component: () => import("@/views/SubContainer.vue"),

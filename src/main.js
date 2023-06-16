@@ -15,40 +15,11 @@ app.use(ElementPlus);
 app.use(router);
 app.mount("#app");
 
-// registerMicroApps(
-//   [
-//     {
-//       name: "VueApp",
-//       entry: "//localhost:8083",
-//       container: "#qiankun-container",
-//       activeRule: "/vue",
-//     },
-//     {
-//       name: "ReactApp",
-//       entry: "//localhost:8002",
-//       container: "#qiankun-container",
-//       activeRule: "/react",
-//     },
-//   ],
-//   {
-//     beforeLoad: [
-//       (app) => {
-//         console.log("before", app);
-//       },
-//     ],
-//     beforeMount: [
-//       (app) => {
-//         console.log("before mount", app);
-//       },
-//     ],
-//     afterUnmount: [
-//       (app) => {
-//         console.log("before unmount", app);
-//       },
-//     ],
-//   }
-// );
+setDefaultMountApp("/app-vue3"); // 设置主应用启动后默认进入的微应用。
 
-setDefaultMountApp("/app-vue3");
-
-start();
+start({
+  prefetch: true, // boolean | 'all' | string[] 配置为 true 则会在第一个微应用 mount 完成后开始预加载其他微应用的静态资源
+  sandbox: {
+    strictStyleIsolation: true, // 开启严格的样式隔离模式
+  },
+});

@@ -6,7 +6,7 @@
       @select="handleMenuSelect"
     >
       <el-menu-item index="/">Home</el-menu-item>
-      <el-menu-item index="/app/app-vue3">vue-app3</el-menu-item>
+      <el-menu-item index="/app-vue3">vue-app3</el-menu-item>
     </el-menu>
   </div>
 </template>
