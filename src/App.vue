@@ -10,11 +10,9 @@ import Menu from "./views/Menu.vue";
 
 <template>
   <header>
-    <div id="app" class="wrapper">
-      凡农大帅比！
+    <div class="wrapper">
       <Menu></Menu>
       <router-view></router-view>
-       <!-- <div id="qiankun-container"></div> -->
     </div>
   </header>
 </template>

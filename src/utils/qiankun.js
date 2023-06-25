@@ -14,15 +14,15 @@ export function registerApps() {
           container: "#sub-container",
           activeRule:
             process.env.NODE_ENV === "development"
-              ? "/app-vue3"
-              : "/app-vue3", 
+              ? "/main/app-vue3"
+              : "/main/app-vue3", 
         },
-        {
-          name: "ReactApp",
-          entry: "//localhost:8002",
-          container: "#qiankun-container",
-          activeRule: "/react",
-        },
+        // {
+        //   name: "ReactApp",
+        //   entry: "//localhost:8002",
+        //   container: "#qiankun-container",
+        //   activeRule: "/react",
+        // },
       ],
       {
         beforeLoad: [

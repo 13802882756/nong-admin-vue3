@@ -9,10 +9,6 @@ const routes = [
     meta: { title: "这是首页" },
     children: [
       {
-        path: "/vue",
-        // component: () => import
-      },
-      {
         path: "/home",
         name: "home",
         component: Home,
@@ -24,7 +20,7 @@ const routes = [
       },
       {
         // history模式需要通配所有路由，详见vue-router文档
-        path: "/app-vue3/:pathMatch(.*)*",
+        path: "/main/app-vue3/:pathMatch(.*)*",
         name: "app-vue3",
         meta: {},
         component: () => import("@/views/SubContainer.vue"),

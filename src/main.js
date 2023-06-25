@@ -15,7 +15,7 @@ app.use(ElementPlus);
 app.use(router);
 app.mount("#app");
 
-setDefaultMountApp("/app-vue3"); // 设置主应用启动后默认进入的微应用。
+// setDefaultMountApp("/app-vue3"); // 设置主应用启动后默认进入的微应用。
 
 start({
   prefetch: true, // boolean | 'all' | string[] 配置为 true 则会在第一个微应用 mount 完成后开始预加载其他微应用的静态资源
