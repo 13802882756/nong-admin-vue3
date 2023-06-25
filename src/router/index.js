@@ -4,8 +4,8 @@ import About from "@/views/About.vue";
 
 const routes = [
   {
-    path: "",
-    redirect: { name: "home" },
+    path: "/main",
+    // redirect: { name: "home" },
     meta: { title: "这是首页" },
     children: [
       {
@@ -20,7 +20,7 @@ const routes = [
       },
       {
         // history模式需要通配所有路由，详见vue-router文档
-        path: "/main/app-vue3/:pathMatch(.*)*",
+        path: "/micro/app-vue3/:pathMatch(.*)*",
         name: "app-vue3",
         meta: {},
         component: () => import("@/views/SubContainer.vue"),

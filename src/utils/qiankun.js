@@ -7,15 +7,10 @@ export function registerApps() {
       [
         {
           name: "app-vue3",
-          entry:
-            process.env.NODE_ENV === "development"
-              ? "//localhost:8083"
-              : "/app-vue3/index.html",
+          entry: process.env.NODE_ENV === "development" ? "//localhost:8083" : "/self_vue3",
           container: "#sub-container",
-          activeRule:
-            process.env.NODE_ENV === "development"
-              ? "/main/app-vue3"
-              : "/main/app-vue3", 
+          // activeRule: process.env.NODE_ENV === "development" ? "/micro/app-vue3" : "/main/app-vue3", 
+          activeRule: '/micro/app-vue3/'
         },
         // {
         //   name: "ReactApp",
