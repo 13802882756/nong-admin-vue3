@@ -9,17 +9,21 @@ import Menu from "./views/Menu.vue";
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <Menu></Menu>
-      <router-view></router-view>
-    </div>
-  </header>
+  <div class="wrapper">
+    <Menu></Menu>
+    <router-view></router-view>
+  </div>
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
+}
+.wrapper {
+  display: flex;
+}
+#sub-container {
+  flex: 1;
 }
 
 .logo {
@@ -36,12 +40,6 @@ header {
 
   .logo {
     margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
   }
 }
 </style>

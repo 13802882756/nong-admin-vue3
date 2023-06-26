@@ -6,7 +6,8 @@
       @select="handleMenuSelect"
     >
       <el-menu-item index="/main">Main</el-menu-item>
-      <el-menu-item index="/micro/app-vue3/">vue3子应用</el-menu-item>
+      <el-menu-item index="/micro/app-vue3-hash">vue3子应用-Hash</el-menu-item>
+      <el-menu-item index="/micro/app-vue3-history">vue3子应用-History</el-menu-item>
     </el-menu>
   </div>
 </template>

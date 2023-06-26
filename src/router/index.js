@@ -27,8 +27,14 @@ const routes = [
     ],
   },
   {
-    path: "/micro/app-vue3/:pathMatch(.*)*",
-    name: "app-vue3",
+    path: "/micro/app-vue3-hash/:pathMatch(.*)*",
+    name: "app-vue3-hash",
+    meta: {},
+    component: () => import("@/views/SubContainer.vue"),
+  },
+  {
+    path: "/micro/app-vue3-history/:pathMatch(.*)*",
+    name: "nong-micro-vue3-history",
     meta: {},
     component: () => import("@/views/SubContainer.vue"),
   },

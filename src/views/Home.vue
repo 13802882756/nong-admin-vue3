@@ -1,5 +1,5 @@
 <template>
-  <div>Home</div>
+  <div class="admin-home">Home</div>
 </template>
 
 <script>
@@ -16,5 +16,11 @@ export default defineComponent({
 </script>
 
 <style>
+.admin-home {
+  background-image: url("../assets/ct5.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  flex: 1;
+}
 /* CSS styles for the home page */
 </style>
