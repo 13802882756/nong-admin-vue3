@@ -20,6 +20,6 @@ app.mount("#app");
 start({
   prefetch: true, // boolean | 'all' | string[] 配置为 true 则会在第一个微应用 mount 完成后开始预加载其他微应用的静态资源
   sandbox: {
-    strictStyleIsolation: true, // 开启严格的样式隔离模式
+    strictStyleIsolation: true, // 开启严格的子应用之间的样式隔离,主应用与子应用不隔离。
   },
 });

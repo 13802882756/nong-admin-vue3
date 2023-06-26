@@ -2,7 +2,7 @@
   <div>
     <el-menu
       :default-active="$route.path"
-      mode="horizontal"
+      mode="vertical"
       @select="handleMenuSelect"
     >
       <el-menu-item index="/main">Main</el-menu-item>
