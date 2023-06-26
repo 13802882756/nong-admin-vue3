@@ -5,8 +5,8 @@
       mode="horizontal"
       @select="handleMenuSelect"
     >
-      <el-menu-item index="/">Home</el-menu-item>
-      <el-menu-item index="/micro/app-vue3/">子应用</el-menu-item>
+      <el-menu-item index="/main">Main</el-menu-item>
+      <el-menu-item index="/micro/app-vue3/">vue3子应用</el-menu-item>
     </el-menu>
   </div>
 </template>

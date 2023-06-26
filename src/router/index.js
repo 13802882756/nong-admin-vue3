@@ -5,8 +5,8 @@ import About from "@/views/About.vue";
 const routes = [
   {
     path: "/main",
-    // redirect: { name: "home" },
     meta: { title: "这是首页" },
+    component: Home,
     children: [
       {
         path: "/home",
@@ -18,14 +18,19 @@ const routes = [
         name: "About",
         component: About,
       },
-      {
-        // history模式需要通配所有路由，详见vue-router文档
-        path: "/micro/app-vue3/:pathMatch(.*)*",
-        name: "app-vue3",
-        meta: {},
-        component: () => import("@/views/SubContainer.vue"),
-      },
+      // {
+      //   path: "/micro/app-vue3/:pathMatch(.*)*",
+      //   name: "app-vue3",
+      //   meta: {},
+      //   component: () => import("@/views/SubContainer.vue"),
+      // },
     ],
+  },
+  {
+    path: "/micro/app-vue3/:pathMatch(.*)*",
+    name: "app-vue3",
+    meta: {},
+    component: () => import("@/views/SubContainer.vue"),
   },
 ];
 

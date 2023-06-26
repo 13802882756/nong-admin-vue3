@@ -1,4 +1,5 @@
 <template>
+<!-- 挂载子应用的dom元素 -->
   <div id="sub-container"></div>
 </template>
 
@@ -11,7 +12,7 @@ export default {
     if (!window.qiankunStarted) {
       window.qiankunStarted = true
       registerApps()
-      console.log('qiankun start')
+      console.log('乾坤start')
       start({
         sandbox: {
           experimentalStyleIsolation: true // 样式隔离
