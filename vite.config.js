@@ -5,14 +5,14 @@ import vue from "@vitejs/plugin-vue";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === "production" ? "/main/dist" : "/",
+  base: process.env.NODE_ENV === "production" ? "/" : "/",
   plugins: [vue()],
   // define: {
   //   'process.env.NODE_ENV': 'production'
   // },
-  build: {
-    outDir:  path.resolve(__dirname, './main/dist'),
-  },
+  // build: {
+  //   outDir:  path.resolve(__dirname, './main/dist'),
+  // },
   server: {
     headers: {
       // 重点1: 允许跨域访问子应用页面
